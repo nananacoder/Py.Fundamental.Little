@@ -2,7 +2,7 @@
 
 import pygame, sys
 from pygame.locals import *
-import numpy as np
+import math
 
 pygame.init()
 
@@ -12,36 +12,31 @@ screen = pygame.display.set_mode((400, 400))
 
 pygame.display.set_caption('Animating Objects')
 img = pygame.image.load('logo.png')
+# 萌萌的小狗转圈的轨迹
+pos = []
 
-steps = np.linspace(20, 360, 40).astype(int)
-right = np.zeros((2, len(steps)))
-down = np.zeros((2, len(steps)))
-left = np.zeros((2, len(steps)))
-up = np.zeros((2, len(steps)))
+# 萌萌的小狗转圈的半径
+r = (400 - max(img.get_width(), img.get_height())) / 2
 
-right[0] = steps
-right[1] = 20
+# 顺时针转上半圈
+for x in range(-r, r + 1):
+    y = math.sqrt(r * r - x * x)
+    # 此时(x,y)在(0,0)为原点，r为半径的圆上，转成轨迹要加上r偏移～
+    pos.append([x + r, y + r]);
 
-down[0] = 360
-down[1] = steps
+# 顺时针转下半圈
+for x in range(r, -(r + 1), -1):
+    y = -math.sqrt(r * r - x * x)
+    # 此时(x,y)在(0,0)为原点，r为半径的圆上，转成轨迹要加上r偏移～
+    pos.append([x + r, y + r]);
 
-left[0] = steps[::-1]
-left[1] = 360
-
-up[0] = 20
-up[1] = steps[::-1]
-
-pos = np.concatenate((right.T, down.T, left.T, up.T))
 i = 0
 
 while True:
     #清屏
     screen.fill((255, 255, 255))
 
-    if i >= len(pos):
-        i = 0
-
-    screen.blit(img, pos[i])
+    screen.blit(img, pos[i % len(pos)])
     i += 1
 
     for event in pygame.event.get():
