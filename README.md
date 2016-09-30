@@ -1,4 +1,3 @@
-### AnalysisBeginner
-small, tiny code for practice
-
-*
+* Scripts
+* Fundamental
+* etc....
