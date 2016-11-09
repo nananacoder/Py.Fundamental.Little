@@ -31,6 +31,10 @@ def digitize2(n):
     # use map function
     map(int, str(n)[::-1])
 
+#or
+def digitize22(n):
+    return map(int, reversed(str(n)))
+
 
 # digitize2 equals :
 def digitize3(n):
