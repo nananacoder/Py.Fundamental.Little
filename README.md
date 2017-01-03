@@ -1,17 +1,28 @@
+##life code record
+
 * data analysis
-     scripts of numpy,matplotlib...
+    
+    basic scripts about numpy,matplotlib,scipy
 
 * Fundamentals
+   
+    exercises from codewars
 
-   codewars
+* Monitoring-file system
 
-*  Scripts
+    文件监控
+    pyinotiy,python-inotify
+    
+* SQL-Scripts
+    
+    python-mysql 脚本
 
-* WatchFile
+* SQL-statements
 
-* pygal
+    basic mysql statements.
+    
+* TestTools
 
-* pygame
+    python自动化测试
 
-* socket & select
 
