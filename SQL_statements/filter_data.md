@@ -9,7 +9,7 @@ SELECT语句中,数据根据WHERE子句中的指定搜索条件进行过滤
 从Products表中检索两个列,但不返回所有行,只返回prod_price值为3.49的行
 
 
-###WHERE子句操作符
+##WHERE子句操作符
 
 
 |          操作            |        说明           |  
@@ -99,3 +99,57 @@ IN的优点:
           FROM Products
           WHERE NOT vend_id = 'DLL01'
           ORDER BY prod_name;
+          
+
+
+## 通配符
+  只能用于文本字段
+  
+### %
+    
+   找出所有以词Fish起头的产品
+    
+    mysql>SELECT prod_id, prod_name
+          FROM Products
+          WHERE prod_name LIKE 'Fish%';
+          
+   %文本% 匹配任何位置上包含文本的值
+   
+    mysql>SELECT prod_id, prod_name
+          FROM Products
+          WHERE prod_name LIKE '%bean bag%';
+          
+   F%y:找出以F起头以y结尾的所有产品:
+      
+    mysql>SELECT prod_name
+          FROM Products
+          WHERE prod_name LIKE 'F%y';
+         
+   eg:根据邮件地址的一部分来查找电子邮件: >WHERE email LIKE 'b%@forta.com'
+   
+
+### 下划线_
+   只匹配单个字符,而不是多个字符
+   
+    mysql>SELECT prod_id, prod_name
+          FROM Products
+          WHERE prod_name LIKE '__ inch teddy bear';
+    (要求匹配两个通配符而不是)
+   输出:
+  
+   | prod          | prod_name          |  
+   |:-------------:|:------------------:|
+   | BR02          | 12 inch teddy bear | 
+   | BR03          | 18 inch teddy bear |
+   
+
+     mysql>SELECT prod_id, prod_name
+           FROM Products
+           WHERE prod_name LIKE '% inch teddy bear';
+    (与%不同,_总是刚好匹配一个字符,不能多也不能少)
+    
+    
+### 方括号[]
+   用来指定一个字符集,它必须匹配指定位置(通配符的位置)的一个字符
+ 
+   
