@@ -151,5 +151,27 @@ IN的优点:
     
 ### 方括号[]
    用来指定一个字符集,它必须匹配指定位置(通配符的位置)的一个字符
- 
    
+    mysql>SELECT cust_contact
+          FROM Customers
+          WHERE cust_contact LIKE '[JM]%'
+          ORDER BY cust_contact;
+          
+   `[JM]`匹配方括号中任意一个字符,它也只能匹配单个字符,它也只能匹配单个字符.因此,任何多于一个字符的名字都不匹配.
+   
+   `[JM]`之后的%通配符匹配第一个字符之后的任意数目的字符,返回所需结果.(以J或者以M开头的任意数目的字符)
+   
+   可用前缀`^`来否定
+   
+    mysql>SELECT cust_contact 
+          FROM Customers
+          WHERE cust_contact LIKE '[^JM]%'
+          ORDER BY cust_contact;
+          
+   可以使用NOT操作符得到类似的结果.`^`的优点是在使用多个WHERE子句时可以简化语法.
+   
+    mysql>SELECT cust_contact
+          FROM Customers
+          WHERE NOT cust_contact LIKE '[JM]%'
+          ORDER BY cust_contact;
+    
