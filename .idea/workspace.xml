@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1266ae4-2565-436f-8c64-13df835b22d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/SQL_Scripts/csv_to_table.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_Scripts/csv_to_table.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL_Scripts/dbconfig1.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_Scripts/dbconfig1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL_Scripts/panda_backup.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_Scripts/panda_backup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL_Scripts/parse_csv.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_Scripts/parse_csv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SQL_Scripts/us_pand.py" beforeDir="false" afterPath="$PROJECT_DIR$/SQL_Scripts/us_pand.py" afterDir="false" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,20 +21,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="sql_csv.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SQL_Scripts/sql_csv.py">
+      <file leaf-file-name="parse_csv.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SQL_Scripts/parse_csv.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="950">
+              <caret line="153" column="36" selection-start-line="153" selection-start-column="36" selection-end-line="153" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="csv_to_table.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SQL_Scripts/csv_to_table.py">
+      <file leaf-file-name="us_pand.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SQL_Scripts/us_pand.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4335">
-              <caret line="261" column="23" selection-start-line="261" selection-start-column="23" selection-end-line="261" selection-end-column="23" />
+            <state relative-caret-position="1748">
+              <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -45,6 +48,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SQL_Scripts/csv_to_table.py" />
+        <option value="$PROJECT_DIR$/SQL_Scripts/dbconfig1.py" />
+        <option value="$PROJECT_DIR$/SQL_Scripts/panda_backup.py" />
+        <option value="$PROJECT_DIR$/SQL_Scripts/parse_csv.py" />
+        <option value="$PROJECT_DIR$/SQL_Scripts/us_pand.py" />
       </list>
     </option>
   </component>
@@ -55,9 +62,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="76" />
+    <option name="x" value="343" />
     <option name="y" value="23" />
-    <option name="width" value="806" />
+    <option name="width" value="997" />
     <option name="height" value="808" />
   </component>
   <component name="ProjectView">
@@ -117,7 +124,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="83" y="23" width="997" height="808" extended-state="0" />
+    <frame x="343" y="23" width="997" height="808" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -157,6 +164,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_Scripts/csv_to_table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4335">
+          <caret line="261" column="23" selection-start-line="261" selection-start-column="23" selection-end-line="261" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_Scripts/dbconfig1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SQL_Scripts/sql_csv.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -164,10 +185,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SQL_Scripts/csv_to_table.py">
+    <entry file="file://$PROJECT_DIR$/SQL_Scripts/panda_backup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4335">
-          <caret line="261" column="23" selection-start-line="261" selection-start-column="23" selection-end-line="261" selection-end-column="23" />
+        <state relative-caret-position="195">
+          <caret line="283" column="22" selection-start-line="283" selection-start-column="22" selection-end-line="283" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_Scripts/mysqldump_to_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1902">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#65#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_Scripts/parse_csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="153" column="36" selection-start-line="153" selection-start-column="36" selection-end-line="153" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SQL_Scripts/us_pand.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1748">
+          <caret line="94" column="1" selection-start-line="94" selection-start-column="1" selection-end-line="94" selection-end-column="1" />
         </state>
       </provider>
     </entry>
