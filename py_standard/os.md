@@ -24,4 +24,11 @@
 **shutil.rmtree()** 删除一个文件夹以及其中所有文件
 
 
+###创建和管理进程 os.exec*()
 
+**os.execvp(program, (program,)+args)**  
+   example:  os.execvp("python", ("python",)+tuple(['xxx.py']))
+    
+    starts a new process, replacing the current one.
+   it searches for the program xxx.py along the standard path, passes the contents of the second argument tuple as individual arguments to that program, and runs it with the current set of environment variables.
+    
