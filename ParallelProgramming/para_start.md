@@ -36,5 +36,13 @@ RLock,Lock: RLock中出了状态locked和unlocked以外，还记录了当前lock
 
 当一个线程想要access一个和信号相关联的资源的时候，必须调用acquire(),然后他会减少信号的内置计数变量，如果这个变量不是负的就允许这个线程去占用这个资源。如果是负的，这个线程将会被延期。
 
-# condition
+##condition
 一个线程等待一个特殊条件 ，同时另一个线程发一个提示说这个条件发生了。一旦这个条件发生，等待条件的线程就会acquire lock从而access到共用资源。
+
+
+##run a process in the background
+a daemonic process is not allowed to create child processes. 
+Otherwise, a daemonic process would have leave its children orphaned if it gets terminated when its parent process exis.
+Additionally, these are not Unix daemons or services, they are normal processes that will be terminated (and not joined) if non-daemonic processes have exited.
+   
+   
